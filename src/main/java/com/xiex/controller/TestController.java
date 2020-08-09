@@ -21,6 +21,8 @@ public class TestController {
     //@Autowired
     private INoticeService noticeService;
 
+
+    // 使用构造函数注入
     public TestController(ISysUserService userService, INoticeService noticeService) {
         this.sysUserService = userService;
         this.noticeService = noticeService;
