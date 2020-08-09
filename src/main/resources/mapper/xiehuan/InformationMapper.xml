@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiex.mapper.xiehuan.InformationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xiex.entity.xiehuan.Information">
+    <result column="id" property="id" />
+        <result column="studentid" property="studentid" />
+        <result column="company" property="company" />
+        <result column="startdate" property="startdate" />
+        <result column="enddate" property="enddate" />
+        <result column="remark" property="remark" />
+        <result column="status" property="status" />
+        <result column="statusdate" property="statusdate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        studentid, company, startdate, enddate, remark, status, statusdate
+    </sql>
+
+</mapper>
